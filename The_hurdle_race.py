@@ -6,5 +6,4 @@ li.sort()
 if k > li[t-1]:
     print('0')
 else:
-    val=abs(li[t-1] - k)
-    print(str(val))
+    print(abs(li[t-1] - k))
