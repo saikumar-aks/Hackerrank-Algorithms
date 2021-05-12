@@ -1,9 +1,12 @@
-#Problem :- https://www.hackerrank.com/challenges/the-hurdle-race/problem
+t=int(input())
+while (t != 0):
+    t-=1
+    H=1
+    n=int(input())
+    for i in range(1,n+1):
+        if i%2==0:
+            H+=1
+        else:
+            H+=H
+    print(str(H))
 
-t , k=map(int ,  input().strip().split())
-li=list(map(int , input().strip().split()))
-li.sort()
-if k > li[t-1]:
-    print('0')
-else:
-    print(abs(li[t-1] - k))
