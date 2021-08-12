@@ -13,5 +13,5 @@ int main()
 		cin>>val;
 		sum+=val;
 	}
-
+	Log(sum);
 }
