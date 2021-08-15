@@ -8,8 +8,7 @@ for _ in range(n):
 
 for i in range(n):
     sum1+=matrix[i][i]
-
-for j in range(n):
-    sum2+=matrix[j][n-1-j]
+    sum2+=matrix[i][n-1-i]
 
 print(abs(sum1-sum2))
+
